@@ -36,6 +36,7 @@ class PagesController extends AppController {
  * @var array
  */
 	public $uses = array();
+	//public $layout = "panel";
 
 /**
  * Displays a view
@@ -76,5 +77,14 @@ class PagesController extends AppController {
 			}
 			throw new NotFoundException();
 		}
+	}
+	public function index(){
+		$this->layout = 'master';
+	}
+
+	public function admin_dashboard()
+	{
+		$this->layout = 'admin';
+		
 	}
 }
