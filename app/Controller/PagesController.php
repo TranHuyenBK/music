@@ -84,6 +84,9 @@ class PagesController extends AppController {
 	public function music(){
 		$this->layout = 'master';
 	}
+	public function play_list(){
+		$this->layout = 'master';
+	}
 
 
 	public function admin_dashboard()
