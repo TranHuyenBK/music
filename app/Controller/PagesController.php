@@ -19,7 +19,6 @@
  */
 
 App::uses('AppController', 'Controller');
-
 /**
  * Static content controller
  *
@@ -82,6 +81,9 @@ class PagesController extends AppController {
 		$this->layout = 'master';
 	}
 	public function music(){
+		$this->layout = 'master';
+	}
+	public function video(){
 		$this->layout = 'master';
 	}
 	public function play_list(){
