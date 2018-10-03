@@ -34,7 +34,7 @@ class PagesController extends AppController {
  *
  * @var array
  */
-	public $uses = array();
+	public $uses = array('Video');
 	//public $layout = "panel";
 
 /**
@@ -79,15 +79,36 @@ class PagesController extends AppController {
 	}
 	public function index(){
 		$this->layout = 'master';
+
 	}
 	public function music(){
 		$this->layout = 'master';
 	}
 	public function video(){
 		$this->layout = 'master';
+		// $data = $this->Video->find('first');
+		// print_r($data)
+		// die();
+
 	}
-	public function play_list(){
+	public function playlist_song(){
 		$this->layout = 'master';
+	}
+
+	public function playlist_video(){
+		$this->layout = 'master';
+		$data = $this->Video->find('all', array('limit' => 1));
+		print_r($data);
+		exit;
+
+	}
+
+	public function detail_song(){
+		$this->layout = 'detail';
+	}
+
+	public function detail_video(){
+		$this->layout = 'detail';
 	}
 
 

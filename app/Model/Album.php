@@ -7,8 +7,17 @@
 	            array(
 	                'className' => 'Album',
 	                'joinTable' => 'album_song',
-	                'foreignKey' => 'category_id',
-	                'associationForeignKey' => 'film_id',
+	                'foreignKey' => 'album_id',
+	                'associationForeignKey' => 'song_id',
+	            )
+	    );
+	    public $hasAndBelongsToMany = array(
+	        'Album' =>
+	            array(
+	                'className' => 'Album',
+	                'joinTable' => 'album_video',
+	                'foreignKey' => 'album_id',
+	                'associationForeignKey' => 'video_id',
 	            )
 	    );
 	    public $validate = array(

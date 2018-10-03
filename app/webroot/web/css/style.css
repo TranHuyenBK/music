@@ -8,7 +8,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 html, body{
     font-size: 100%;
 	font-family: 'Prompt', sans-serif;
-	background:#ffffff;
+	background:#3C2053;
+  background-color:#3C2053;
 	margin: 0;
 }
 p,ul li,ol li{
