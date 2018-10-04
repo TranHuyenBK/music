@@ -4,7 +4,7 @@
 ?>
 <script src="https://cdn.plyr.io/3.4.4/plyr.js"></script>
 <link rel="stylesheet" href="https://cdn.plyr.io/3.4.4/plyr.css">
-<div class="containers">
+<div class="containers" align="justify">
     <div class="column add-bottom">
         <div id="mainwrap">
             <div id="nowPlay">
