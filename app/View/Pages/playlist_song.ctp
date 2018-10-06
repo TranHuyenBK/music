@@ -1,12 +1,12 @@
 <?php 
-    echo $this->Html->css('play_list.css');
-    echo $this->Html->script('play_list.js');
+    echo $this->Html->css('playlist_song.css');
+    echo $this->Html->script('playlist_song.js');
 ?>
 <script src="https://cdn.plyr.io/3.4.4/plyr.js"></script>
 <link rel="stylesheet" href="https://cdn.plyr.io/3.4.4/plyr.css">
 <div class="containers" align="justify">
     <div class="column add-bottom">
-        <div id="mainwrap">
+        <div id="mainwrap" style= "margin_left : 30px">
             <div id="nowPlay">
                 <span id="npAction">Paused...</span><span id="npTitle"></span>
             </div>

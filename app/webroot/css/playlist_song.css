@@ -4,11 +4,9 @@ html,body {
 background-color:#3C2053;
 color:#fff;
 font-size:1.05rem;
-font-family:"Oxygen", HelveticaNeue, "Helvetica Neue", Helvetica, Arial, sans-serif;
 font-weight:300;
 letter-spacing:.025rem;
 line-height:1.618;
-padding:1rem 0;
 }
 
 *,::before,::after {
@@ -47,6 +45,9 @@ p a,p a:visited { line-height:inherit; }
 margin:2rem auto;
 text-align:center;
 width:90%;
+}
+#mainwrap{
+	margin-left: 40px;
 }
 
 

@@ -97,12 +97,11 @@ class PagesController extends AppController {
 
 	public function playlist_video(){
 		$this->layout = 'master';
-		$video = $this->Video->find('first');
+		$video = $this->Video->find('all');
 		$this->set('videos', $video);
-		// pr($video);
-		// exit();
-		
-
+	}
+	public function test(){
+		// $this->layout = 'detail';
 	}
 	public function detail_song(){
 		$this->layout = 'detail';
