@@ -34,7 +34,7 @@ class PagesController extends AppController {
  *
  * @var array
  */
-	public $uses = array('Video');
+	public $uses = array('');
 	//public $layout = "panel";
 
 /**
@@ -86,13 +86,14 @@ class PagesController extends AppController {
 	}
 	public function video(){
 		$this->layout = 'master';
-		// $data = $this->Video->find('first');
-		// print_r($data)
-		// die();
-
+		$video = $this->Video->find('all');
+		$this->set('videos', $video);
 	}
 	public function playlist_song(){
 		$this->layout = 'master';
+		$this->loadModel('Song');
+		$tracks = $this->Song->find('all');
+		$this->set('tracks', $tracks);
 	}
 
 	public function playlist_video(){
@@ -100,11 +101,9 @@ class PagesController extends AppController {
 		$video = $this->Video->find('all');
 		$this->set('videos', $video);
 	}
-	public function test(){
-		// $this->layout = 'detail';
-	}
+
 	public function detail_song(){
-		$this->layout = 'detail';
+		// $this->layout = 'detail';
 	}
 
 	public function detail_video(){
@@ -114,5 +113,18 @@ class PagesController extends AppController {
 	public function admin_dashboard()
 	{
 		$this->layout = 'admin';
+	}
+
+	public function getData() {
+		$this->layout = false;
+		$this->autoRender= false;
+
+		// $this->request->data
+
+		$res = array(
+			'a' => 1, 'b'=>2);
+
+
+		return json_encode($res);
 	}
 }

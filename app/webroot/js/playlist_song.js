@@ -15,6 +15,7 @@ jQuery(function ($) {
                 'volume'
             ]
         });
+
         // initialize playlist and controls
         var index = 0,
             playing = false,
@@ -201,22 +202,22 @@ jQuery(function ($) {
                 "duration": "8:36",
                 "file": "SSB___11_03_TFTake_2"
             }],
-            buildPlaylist = $(tracks).each(function(key, value) {
-                var trackNumber = value.track,
-                    trackName = value.name,
-                    trackDuration = value.duration;
-                if (trackNumber.toString().length === 1) {
-                    trackNumber = '0' + trackNumber;
-                }
-                $('#plList').append('<li> \
-                    <div class="plItem"> \
-                        <span class="plNum">' + trackNumber + '.</span> \
-                        <span class="plTitle">' + trackName + '</span> \
-                        <span class="plLength">' + trackDuration + '</span> \
-                    </div> \
-                </li>');
-            }),
-            trackCount = tracks.length,
+            // buildPlaylist = $(tracks).each(function(key, value) {
+            //     var trackNumber = value.track,
+            //         trackName = value.name,
+            //         trackDuration = value.duration;
+            //     if (trackNumber.toString().length === 1) {
+            //         trackNumber = '0' + trackNumber;
+            //     }
+            //     $('#plList').append('<li> \
+            //         div class="plItem"> \
+            //             <<span class="plNum">' + trackNumber + '.</span> \
+            //             <span class="plTitle">' + trackName + '</span> \
+            //             <span class="plLength">' + trackDuration + '</span> \
+            //         </div> \
+            //     </li>');
+            // }),
+            trackCount = $('.plList li').length(),
             npAction = $('#npAction'),
             npTitle = $('#npTitle'),
             audio = $('#audio1').on('play', function () {

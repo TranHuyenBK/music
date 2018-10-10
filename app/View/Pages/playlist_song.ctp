@@ -19,7 +19,17 @@
                 </div>
             </div>
             <div id="plwrap">
-                <ul id="plList"></ul>
+                <ul id="plList">
+                    <?php foreach ($tracks as $val) :?>
+                    <li> 
+                        <div class="plItem"> 
+                            <span class="plNum"> <?php echo $val['Song']['id']; ?> </span> 
+                            <span class="plTitle"><?php echo $val['Song']['song_name']; ?> </span> 
+                            <span class="plLength"> <?php echo $val['Song']['duration']; ?> </span> 
+                        </div> 
+                    </li>
+                    <?php endforeach; ?>
+                </ul>
             </div>
         </div>
     </div>

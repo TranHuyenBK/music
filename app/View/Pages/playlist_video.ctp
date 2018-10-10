@@ -33,9 +33,6 @@
     <h2>maybe you have not</h2>
     <br>
     <div class="row">
-        <?php foreach ($ as $key => $value) {
-            # code...
-        } ?>
         <div class="col-sm-6 col-md-4 col-lg-3">
             <div class="section"></div>
         </div>
