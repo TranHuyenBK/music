@@ -1,3 +1,9 @@
+<!--
+author: W3layouts
+author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,12 +25,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 ?>
 <link href="" rel="stylesheet"> 
 <!-- //font-awesome-icons -->
-<link href="//fonts.googleapis.com/css?family=Sofia" rel="stylesheet">
-<link href="//fonts.googleapis.com/css?family=Prompt:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext,thai,vietnamese" rel="stylesheet"></head>
+<!-- <link href="//fonts.googleapis.com/css?family=Sofia" rel="stylesheet"> -->
+<!-- <link href="//fonts.googleapis.com/css?family=Prompt:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&amp;subset=latin-ext,thai,vietnamese" rel="stylesheet"></head> -->
     
 <body>
 <!-- banner -->
-    <div class="banner">
+    <div class="banner1">
         <div class="container">
             <nav class="navbar navbar-default">
                 <div class="navbar-header navbar-left">
@@ -40,8 +46,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
                     <nav class="menu menu--iris">
                         <ul class="nav navbar-nav menu__list">
-                            <li class="menu__item menu__item--current"><a href="index.html" class="menu__link">Home</a></li>
-                            <li class="menu__item"><a href="music.html" class="menu__link">Music</a></li>
+                            <li class="menu__item"><a href="index.html" class="menu__link">Home</a></li>
+                            <li class="menu__item menu__item--current"><a href="music.html" class="menu__link">Music</a></li>
                             <li class="menu__item"><a href="gallery.html" class="menu__link">Gallery</a></li>
                             <li class="dropdown menu__item">
                                 <a href="#" class="dropdown-toggle menu__link" data-toggle="dropdown">Short Codes <b class="caret"></b></a>
@@ -55,9 +61,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     </nav>
                 </div>
             </nav>
-            <div class="agile_banner_info">
-                <h3>music</h3>
-            </div>
         </div>
     </div>
 <!-- //banner -->   
@@ -75,19 +78,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <div class="agileits_footer_grid_gallery1">
                         <a href="#" data-toggle="modal" data-target="#myModal"><img src="<?php echo $this->webroot.'/web/images/11.jpg'; ?>" alt=" " class="img-responsive" /></a>
                     </div>
-                    <div class="agileits_footer_grid_gallery1">
-                        <a href="#" data-toggle="modal" data-target="#myModal"><img src="<?php echo $this->webroot.'/web/images/11.jpg'; ?>" alt=" " class="img-responsive" /></a>
-                    </div>
-                    <div class="agileits_footer_grid_gallery1">
-                        <a href="#" data-toggle="modal" data-target="#myModal"><img src="<?php echo $this->webroot.'/web/images/11.jpg'; ?>" alt=" " class="img-responsive" /></a>
-                    </div>
-                    <div class="agileits_footer_grid_gallery1">
-                        <a href="#" data-toggle="modal" data-target="#myModal"><img src="<?php echo $this->webroot.'/web/images/11.jpg'; ?>" alt=" " class="img-responsive" /></a>
-                    </div>
-                    <div class="agileits_footer_grid_gallery1">
-                        <a href="#" data-toggle="modal" data-target="#myModal"><img src="<?php echo $this->webroot.'/web/images/11.jpg'; ?>" alt=" " class="img-responsive" /></a>
-                    </div>
-                    <div class="clearfix"> </div>
+                    
+                    
                 </div>
             </div>
             <div class="col-md-4 agileinfo_footer_grid">
@@ -112,11 +104,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     </div>
 <!-- //footer -->
 <!-- copy-right -->
-    <div class="w3agile_copy_right">
-        <div class="container">
-             <p>© 2017 Symphony. All Rights Reserved | Design by <a href="https://w3layouts.com/">W3layouts</a></p>
-        </div>
-    </div>
+   
 <!-- //copy-right -->
 <!-- bootstrap-pop-up -->
     <div class="modal video-modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModal">

@@ -98,33 +98,16 @@ class PagesController extends AppController {
 
 	public function playlist_video(){
 		$this->layout = 'master';
+		$this->loadModel('Video');
 		$video = $this->Video->find('all');
 		$this->set('videos', $video);
 	}
 
 	public function detail_song(){
-		// $this->layout = 'detail';
+		$this->layout = 'master';
 	}
 
 	public function detail_video(){
 		$this->layout = 'detail';
-	}
-
-	public function admin_dashboard()
-	{
-		$this->layout = 'admin';
-	}
-
-	public function getData() {
-		$this->layout = false;
-		$this->autoRender= false;
-
-		// $this->request->data
-
-		$res = array(
-			'a' => 1, 'b'=>2);
-
-
-		return json_encode($res);
 	}
 }

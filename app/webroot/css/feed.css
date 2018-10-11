@@ -1,0 +1,395 @@
+#feed{
+	max-width: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 90px;
+}
+.photo__image{
+	width: 600px;
+}
+/*overall container*/
+.photo__container{
+	max-width: 600px;
+	max-width:100%;
+	margin-top: 20px;
+	border: 1px solid #e6e6e6;
+}
+/*profile*/
+
+.uploadfile{
+	width: 500px;
+	height: 687px;
+	overflow: hidden;
+	border: 1px solid #E6E6E6;
+	border-bottom: none;
+	position: fixed;
+	top: 10%;
+	left: 35%;
+	z-index: 3;
+	opacity: 0;
+	border-radius: 2px;
+	transition: 0.4s;
+	visibility: hidden;
+}
+#preview{
+	width:100%;
+	height: 500px;
+	background-color: white;
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: #1e1e1e;
+	opacity: 1; /* Firefox */
+}
+
+#description{
+	width: 100%;
+	height: 100px;
+	font-size: 20px;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+.btn-info{
+	width: 100%;
+	height: 50px;
+}
+.photo__header{
+	background-color: white;
+	display: flex;
+	align-items: center;
+	width: 600px;
+	height: 62px;
+	padding-left: 17px;
+	box-sizing: border-box;
+}
+
+.photo__avatar{
+	margin-left: 3px;
+	width: 32px;
+	height: 32px;
+	border-radius: 50%;
+	animation: 1.5s avatar_rotate linear;
+}
+
+img#blah {
+	width: 100px;
+}
+/* for the rotate */
+@keyframes avatar_rotate {
+	from {
+		transform: rotate(0turn);
+	}
+
+	to {
+		transform: rotate(10turn);
+	}
+}
+
+.photo__author{
+	text-align: left;
+	margin-right: auto;
+	margin-left: 15px;
+	display: block;
+	margin-bottom: 5px;
+}
+
+.photo__location{
+	text-align: left;
+	margin-right: auto;
+	margin-left: 15px;
+	color: #999;
+}
+/*insta photo*/
+.insta__image{
+	border : 1px solid #e6e6e6;
+	max-width:599px;
+	height:600px;
+}
+
+/* likes, comments */
+.photo__main{
+	background-color: white;
+	width:600px;
+	display:block;
+}
+
+.photo__actions{
+	padding: 11px 15px 11px 15px;
+	display: flex;
+	align-items: center;
+}
+
+.photo__actions i{
+	font-size: 22px;
+	margin-right: 16px;	
+}
+
+.fa-heart{
+	color:red;
+}
+
+.fa-comment-o {
+	padding-bottom: 4px
+}
+
+.photo__likes{
+	padding-left: 13px;
+	margin-bottom: 17px;
+	font-size:13px;
+	font-weight: 600;
+
+}
+
+.comments{
+	margin-top: 13px;
+	padding-left:13px;
+	margin-bottom: 17px;
+	display: block;
+}
+
+.photo__comment{
+	margin-bottom: 11px;
+	font-size:13px;
+
+}
+
+.photo__comment--author{
+	font-weight: 600;
+}
+
+.photo__date{
+	padding-left:13px;
+	font-size:12px;
+	color: #A7A7A7;
+}
+
+.photo__addcomment-container{
+	margin-left:13px;
+	margin-top:15px;
+	box-sizing: border-box;
+}
+
+.photo__addcomment-container textarea {
+	padding-top: 18px;
+	position: relative;
+}
+
+.photo__addcomment-area{
+	width:570px;
+	border: none;
+	border-top: 1px solid #e6e6e6;
+}
+
+.photo__addcomment-container{
+	position: relative;
+}
+
+.photo__addcomment-container i{
+	color: #1D1D1D;
+	position: absolute;
+	padding-top: 20px;
+	padding-right: 18px;
+	top :0;
+	right:0;
+
+}
+
+/*heart pump*/
+.fa-heart-o{
+	animation: 1s pump infinite linear;
+}
+ion-icon{
+	font-size: 20px;
+	padding-right: 10px;
+	cursor: pointer;
+}
+@keyframes pump{
+	from{
+		transform:none;
+	}
+	
+	to{
+		transform: scale(1.1,1.1);
+	}
+}
+
+.popUp{
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0.5);
+	width: 100%;
+	height: 100%;
+	top:0;
+	display:none;
+}
+
+.popUp i{
+	position: absolute;
+	top:10px;
+	right:20px;
+	color:white;
+	cursor: pointer;
+}
+
+.popUpContainer{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.popUpContainer a{
+	display: block;
+	background-color: white;
+	width:420px;
+	text-align: center;
+	padding:25px 0;
+	border-bottom:1px solid #e6e6e6;
+	font-size: 16px;
+	color:black;
+}
+
+.popUpContainer a:hover{
+	background-color: #efefef;
+}
+.den{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	background-color: #0000009e;
+	z-index: 2;
+	transition: 0.4s;
+	opacity: 0;
+	visibility: hidden;
+}
+.hienlen{
+	opacity: 1;
+	visibility: visible;
+}
+.liked{
+	color: red;
+}
+
+.more {
+    display:block;
+    overflow:hidden;
+    padding-bottom: 10px;
+    border: none;
+    padding-top: 5px;
+    margin-left: 20px;
+}
+
+.span_username{
+	font-weight: 800;
+}
+
+.morelink {
+	font-weight: 900;
+	font-size: 15px;
+	padding-top: 5px;
+}
+.morelink:hover {
+	text-decoration: none;
+}
+/*Div-right-feed*/
+.ul-comment-feed{
+	margin-left: 20px;
+}
+.vllll{
+	color: black;
+}
+.vllll:hover{
+	text-decoration: none;
+	color: default;
+}
+#div_feed_right{
+	width: 400px;
+	height:auto;
+	margin-top: 20px;
+}
+.div-avatar-right{
+	height: 65px;
+	width: 100%;
+}
+.img-avatar-feed-right{
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	margin: 7px 0 0 5px;
+}
+.div-is-name{
+	padding-top: 10px;
+}
+.is-username{
+	line-height: 23px;
+	font-weight: 900;
+}
+
+.is-name{
+	line-height: 20px;
+}
+.div-text-online{
+	height: 30px;
+	width: 100%;
+	border-bottom: 1px solid #CFD1D7;
+	padding: 10px 0 0 20px;
+	font-weight: 1000;
+	color: #A2A4AB;
+}
+#div_chil_right{
+	position: fixed;
+	width: 400px;
+	height: auto; padding-left: 25px;
+}
+
+.user-follow{
+	height: 350px;
+	max-height: 350px;
+	width: 100%;
+	overflow: auto;
+	border-bottom: 1px solid #CFD1D7;
+	padding: 10px 0 10px 20px;
+}
+
+.div-avatar-user-follow{
+	height: 55px;
+	width: 100%;
+}
+
+.img-avatar-user-follow{
+	height: 40px;
+	width: 40px;
+	border-radius: 50%;
+	margin: 7px 0 0 5px;
+}
+
+.div-name-follow{
+	width: 300px;
+	padding: 15px 0 0 0;
+}
+
+.div-name-follow{
+	line-height: 23px;
+	font-weight: 900;
+}
+#divlike{
+	margin-left: 14px;
+}
+.comment.more{
+	margin-left: 14px;
+}
+i.fa.fa-bookmark.fa-2x{
+	margin-left: 81%;
+	cursor: pointer;
+}
+a:hover{
+	text-decoration: none;
+}
+.div-avatar-user-follow{
+	cursor: pointer;
+}
+.toidi{
+	background-color: #21252942;
+}

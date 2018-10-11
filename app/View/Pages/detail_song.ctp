@@ -12,7 +12,7 @@
         </div>
         <!-- /.col-lg-3 -->
 
-        <div class="col-md-6">
+        <div class="col-md-5">
 
           <div >
             <img class="card-img-top img-fluid" src="http://placehold.it/900x400" alt="">

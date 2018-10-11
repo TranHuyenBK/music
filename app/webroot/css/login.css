@@ -1,0 +1,151 @@
+body, html{
+	height: 100%;
+	width: 100%;
+}
+*{
+	padding: 0;
+	margin: 0;
+}
+#background{
+	background-image: url("../app/webroot/img/bg1.jpg");
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+	background-position: center;	
+	display: table;	
+}
+#loginContainer *{
+	font-family: "Helvetica Neue","Helvetica","Arial", sans-serif ;
+	color: #858579;
+	font-weight: normal;
+	line-height: 1.70em;
+	box-sizing: border-box;
+}
+img#logoLogin {
+	width: 300px;
+}
+#loginContainer{
+	width: 80%;
+	margin: 0 auto;
+	position: relative;
+	max-width: 1024px;
+	height: 100%;
+	padding-top: 10%;
+}
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #efe9e95e;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #efe9e95e;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #efe9e95e;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #efe9e95e;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:    #efe9e95e;
+}
+
+::placeholder { /* Most modern browsers support this now. */
+   color:    #efe9e95e;
+}
+#inputContainer{
+	width: 400px;
+	padding: 45px;
+	float: left;
+	height: auto;
+	animation: showfromleft 1s forwards;
+	display: table-cell;
+}
+#inputContainer h2 {
+	text-align: center;
+}
+#inputContainer input[type="text"], #inputContainer input[type="password"], #inputContainer input[type="email"]{
+	display: block;
+	background-color: #ada69a33;
+	border: 0;
+	height: 27px;
+	line-height: 27px;
+	width: 100%;
+	border-bottom: 1px solid #fff;
+	border: 1px solid #ccc;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	-moz-box-shadow: 2px 2px 3px #666;
+	-webkit-box-shadow: 2px 2px 3px #666;
+	box-shadow: 2px 2px 3px #666;
+	font-size: 20px;
+	padding: 4px 7px;
+	outline: 0;
+	-webkit-appearance: none;
+}
+#inputContainer button{
+	background-color: transparent;
+	border: 2px solid #858579;
+	border-radius: 250px;
+	color: gray;
+	display: block;
+	font-size: 14px;
+	letter-spacing: 1px;
+	margin: 20px auto;
+	height: 41px;
+	width: 100%;
+}
+#inputContainer button:hover{
+	cursor: pointer;
+}
+.hasAccount span{
+	display: block;
+	text-align: center;
+	font-size: 12px;
+	font-weight: bold;
+}
+.hasAccount span:hover{
+	cursor: pointer;
+}
+#loginForm {
+	transition: 1s;
+}
+#registerForm{
+	transition: 1s;
+}
+#loginText{
+	border-left: 1px solid;
+	animation: showfromright 2s forwards;
+	padding: 45px;
+	display: table-cell;
+}
+#loginText h1{
+	color: #000000;
+	font-size: 60px;
+	font-weight: bold;
+	line-height: 1.2em;
+}
+#loginText h2{
+	font-size: 35px;
+	margin: 23px 0;
+}
+#loginText ul{
+	list-style: none;
+	font-size: 25px;
+
+}
+.fa-check{
+	margin-right: 10px;	
+}
+#registerBtn{
+	color: white !important;
+}
+@keyframes showfromleft{
+	from {opacity: 0;transform: translateX(-250px);}
+	to {opacity: 1;transform: translateX(0px);}
+}
+@keyframes showfromright{
+	from {opacity: 0;transform: translateX(2250px);}
+	to {opacity: 1;transform: translateX(0px);}
+}
