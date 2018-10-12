@@ -1,4 +1,4 @@
-<!-- banner-bottom -->
+banner-bottom -->
 <br><br>   
 <div class="banner-bottom">
         <div class="col-md-4 agileits_w3layouts_banner_bottom_grid">
@@ -50,7 +50,7 @@
     </div>
 <!-- //banner-bottom -->
 <!-- features -->
-<br>
+<!-- <br> -->
     <div class="features">
         <div class="container">
             <div class="col-md-6 agile_features_left">
@@ -73,15 +73,16 @@
     </div>
 <!-- //features -->
 <!-- newsletter -->
-<br>
+<!-- <br> -->
     <div class="newsletter">
         <div class="container">
-            <div class="col-md-6 w3_agile_newsletter_left">
+            <div class="col-md-4 w3_agile_newsletter_left">
                 <p>Subscribe Newsletter</p>
             </div>
-            <div class="col-md-6 w3_agile_newsletter_right">
+            <div class="col-md-8 w3_agile_newsletter_right">
                 <form action="#" method="post">
                     <input type="email" name="Email" placeholder="Email..." required="">
+                    <input type="password" name="Email" placeholder="Password..." required="">
                     <input type="submit" value="Send">
                 </form>
             </div>
@@ -90,7 +91,7 @@
     </div>
 <!-- //newsletter -->
 <!-- team -->
-<br>
+<!-- <br> -->
     <div class="team">
         <div class="hovereffect1 col-md-4 wthree_latest_albums_grid_left">
             <figure class="effect-julia">
@@ -166,4 +167,4 @@
         </div>
     </div>
 <!-- //latest-albums -->
-<!-- footer -->
+<!-- footer

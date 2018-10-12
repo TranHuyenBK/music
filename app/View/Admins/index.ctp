@@ -8,7 +8,7 @@ $img_picceo = $this->Html->image('feed_logo.png', array(
     <button class="btn no-bg" id="sidebarToggle">
         <i class="fa fa-bars"></i>
     </button>
-    <div class="space left"></div>
+    <div class="smusicleft"></div>
     <ul class="bar navbar">
         <li>
             <p class="text-italic">Hello ...,</p>
@@ -24,37 +24,17 @@ $img_picceo = $this->Html->image('feed_logo.png', array(
                         <span class="alert alert-danger radius right">4</span>
                     </a>
                 </div>
-                    <div class="contain" id="dropdown-toggle">
-                        <a href="#" class="item-link-list text-black">New Users
-                            <span class="alert alert-danger radius right">2</span>
-                        </a>
-                    </div>
-                    <div class="contain" id="dropdown-toggle">
-                        <a href="#" class="item-link-list text-black">Inactive Users
-                            <span class="alert alert-danger radius right">0</span>
-                        </a>
-                    </div>
-                <div class="dropdown-divider"></div>
                 <div class="contain" id="dropdown-toggle">
-                    <a href="#" class="item-link text-black">Reports
-                        <span class="alert alert-danger radius right">4</span>
+                    <a href="#" class="item-link-list text-black">New Users
+                        <span class="alert alert-danger radius right">2</span>
                     </a>
                 </div>
-                    <div class="contain" id="dropdown-toggle">
-                        <a href="#" class="item-link-list text-black">Pending
-                            <span class="alert alert-danger radius right">2</span>
-                        </a>
-                    </div>
-                    <div class="contain" id="dropdown-toggle">
-                        <a href="#" class="item-link-list text-black">Processing
-                            <span class="alert alert-danger radius right">0</span>
-                        </a>
-                    </div>
-                    <div class="contain" id="dropdown-toggle">
-                        <a href="#" class="item-link-list text-black">Processed
-                            <span class="alert alert-danger radius right">2</span>
-                        </a>
-                    </div>
+                <div class="contain" id="dropdown-toggle">
+                    <a href="#" class="item-link-list text-black">Inactive Users
+                        <span class="alert alert-danger radius right">0</span>
+                    </a>
+                </div>
+              
             </div>
         </li>
         <li class="contain">
@@ -90,20 +70,20 @@ $img_picceo = $this->Html->image('feed_logo.png', array(
             <a href="#" class="item-link" id="nav-manager"><i class="fa fa-user-tie" ></i>Manager</a>
             <div class="dropdown-divider"></div>
             <div class="contain" >
-                <a href="#" class="item-link-list" id="nav-users-manager">
+                <a href="/music/admins/users" class="item-link-list" id="nav-users-manager">
                     <i class="fa fa-users" ></i>Users
                     <span class="alert alert-danger radius right">10</span>
                 </a>
             </div>
             <div class="contain" >
-                <a href="#" class="item-link-list" id="nav-pictures-manager">
-                    <i class="fa fa-images" ></i>Pictures
+                <a href="/music/admins/audio" class="item-link-list" id="nav-pictures-manager">
+                    <i class="far fa-file-audio"></i>Audio
                     <span class="alert alert-danger radius right">10</span>
                 </a>
             </div>
             <div class="contain" >
-                <a href="#" class="item-link-list" id="nav-tags-manager">
-                    <i class="fa fa-tags" ></i>Tags
+                <a href="/music/admins/video" class="item-link-list" id="nav-tags-manager">
+                    <i class="fa fa-play-circle" aria-hidden="true"></i>Video
                     <span class="alert alert-danger radius right">10</span>
                 </a>
             </div>

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Symphony a Music Category Flat Bootstrap Responsive Website Template | Home :: w3layouts</title>
+<title>Music</title>
 <!-- custom-theme -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -50,7 +50,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                     <li><a href="typography.html">Typography</a></li>
                                 </ul>
                             </li>
-                            <li class="menu__item"><a href="mail.html" class="menu__link">Mail Us</a></li>
+                            <li class="menu__item"><a href="/music/feeds/index" class="menu__link">Blog</a></li>
                         </ul>
                     </nav>
                 </div>

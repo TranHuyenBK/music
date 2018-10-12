@@ -1,13 +1,13 @@
 $(document).ready(function(){
-	var base_url = location.protocol + "//" + document.domain + "/cakephp/app/webroot/img/feed_logo.png";
+	var base_url = location.protocol + "//" + document.domain + "/music/app/webroot/img/feed_logo.png";
 
 	$('#img-logo-picceo').attr('src', base_url);
 
-	$('#way-back-home').attr('href', location.protocol + "//" + document.domain +"/cakephp/feeds");
+	$('#way-back-home').attr('href', location.protocol + "//" + document.domain +"/music/feeds");
 
-	$("#way-go-profile").attr('href', location.protocol + "//" + document.domain +"/cakephp/profiles/profile/" + $("#way-go-profile").attr('id_session'));
+	$("#way-go-profile").attr('href', location.protocol + "//" + document.domain +"/music/profiles/profile/" + $("#way-go-profile").attr('id_session'));
 
-	$(".avatar-profile-tt").attr('src', location.protocol + "//" + document.domain +"/cakephp/app/webroot/img/avatarUsers/default.jpg");
+	$(".avatar-profile-tt").attr('src', location.protocol + "//" + document.domain +"/music/app/webroot/img/avatarUsers/default.jpg");
 	var cog = $('#cog');
 	var popUp = $('.popUp');
 	var closePopUp = $('#closePopUp');
@@ -32,7 +32,7 @@ var action = 'inactive';
 function load_country_data(limit, start)
 {
 $.ajax({
-url: location.protocol + "//" + document.domain +"/cakephp/feeds/home_content",
+url: location.protocol + "//" + document.domain +"/music/feeds/home_content",
 method:"POST",
 data:{limit:limit, start:start},
 cache:false,
@@ -156,7 +156,7 @@ load_country_data(limit, start);
 
     	if($checkdata == -1){
     		$avatar = $('<img>').attr({
-    			src: location.protocol + "//" + document.domain + "/cakephp/app/webroot/img/avatar.jpg",
+    			src: location.protocol + "//" + document.domain + "../img/avatar.jpg",
     		}).addClass('div-img-avatar-search').appendTo($divContentImag);
     	}else {
     		$icontags = $('<i/>').addClass('fa fa-hashtag icon-img-search').appendTo($divContentImag);
@@ -308,7 +308,7 @@ load_country_data(limit, start);
 
 function send_change_pass(){
 	$.ajax({
-		url: location.protocol + "//" + document.domain + "/cakephp/profiles/check_old_pass",
+		url: location.protocol + "//" + document.domain + "/music/profiles/check_old_pass",
 		type: 'POST',
 		data: {
 			old_pass : $("#old_password").val()
@@ -329,14 +329,14 @@ function send_change_pass(){
 
 function change_pass(){
 	$.ajax({
-		url: location.protocol + "//" + document.domain + "/cakephp/profiles/change_pass",
+		url: location.protocol + "//" + document.domain + "/music/profiles/change_pass",
 		type: 'POST',
 		data: {
 			new_pass : $("#new_password").val()
 		}
 	}).done(function(){
 		console.log("Saved");
-		$(location).attr('href', location.protocol + "//" + document.domain + "/cakephp/users/login");
+		$(location).attr('href', location.protocol + "//" + document.domain + "/music/users/login");
 	});
 }
 
@@ -364,7 +364,7 @@ function send_edit_profile(){
 	formData.append('flag',flag);
 	formData.append('upload_input',file);
 	$.ajax({
-		url: location.protocol + "//" + document.domain + "/cakephp/profiles/send_edit_profile",
+		url: location.protocol + "//" + document.domain + "/music/profiles/send_edit_profile",
 		type: 'POST',
 		method: 'post',
 		processData: false,
@@ -372,7 +372,7 @@ function send_edit_profile(){
 		data: formData
 	}).done(function(res){
 		alert("Update Seccefully");
-		//$(location).attr('href', location.protocol + "//" + document.domain + "/cakephp/feeds");
+		//$(location).attr('href', location.protocol + "//" + document.domain + "/music/feeds");
 	});
 }
 

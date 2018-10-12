@@ -29,14 +29,14 @@ include_once("index.ctp");
                         <input class ="min" id="user-followers-min" min="0" value="0" name="quantity" type="number">
                         <button class="adjust-quantity" onclick="this.previousElementSibling.stepUp()">+</button>
                     </div>
-                    <label for="search" class="range-label" style="width: 240px">Number of Followers</label>
-                    <div class="range-button plus-button"><i class="fa fa-plus-circle"></i></div>
-                    <div class="range-button from-to-button"><i class="fa fa-arrow-circle-right"></i></div>
-                    <div class="range-max">    
+                    <label for="search" class="range-label" style="width: 200px" align="center">Number of Followers</label>
+                    <!-- <div class="range-button plus-button"><i class="fa fa-plus-circle"></i></div>
+                    <div class="range-button from-to-button"><i class="fa fa-arrow-circle-right"></i></div> -->
+                    <!-- <div class="range-max">    
                         <button class="adjust-quantity" onclick="this.nextElementSibling.stepDown()" >-</button>
                         <input class ="max" id="user-followers-max" min="0" name="quantity" type="number">
                         <button class="adjust-quantity" onclick="this.previousElementSibling.stepUp()">+</button>
-                    </div>
+                    </div> -->
                 </div>
 
                 <div class="search-by-column inline" id="col-user-reports">                
@@ -45,7 +45,7 @@ include_once("index.ctp");
                         <input class ="min" id="user-reports-min" min="0" value="0" name="quantity" type="number">
                         <button class="adjust-quantity" onclick="this.previousElementSibling.stepUp()">+</button>
                     </div>
-                    <label for="search" class="range-label" style="width: 240px">Reported Times</label>
+                    <label for="search" class="range-label" style="width: 200px" align="center">Reported Times</label>
                     <div class="range-button plus-button"><i class="fa fa-plus-circle"></i></div>
                     <div class="range-button from-to-button"><i class="fa fa-arrow-circle-right"></i></div>
                     <div class="range-max">    
@@ -55,26 +55,12 @@ include_once("index.ctp");
                     </div>
                 </div>
 
-                <div class="search-by-column" id="col-user-creation">
-                    <div class="range-min">  
-                        <span class="empty"><i class="fas fa-times inside right"></i></span>  
-                        <input class ="min" id="user-creation-from" type="text" placeholder="Enter user's creation time">
-                    </div>
-                    <label for="search" class="range-label" style="width: 240px">Creation Time</label>
-                    <div class="range-button plus-button"><i class="fa fa-plus-circle"></i></div>
-                    <div class="range-button from-to-button"><i class="fa fa-arrow-circle-down"></i></div>
-                    <div class="range-max">    
-                        <span class="empty"><i class="fas fa-times inside right"></i></span>  
-                        <input class ="max" id="user-creation-to" type="text" placeholder="Enter user's creation time">
-                    </div>
-                </div>
-
                 <div class="search-by-column" id="col-user-login">
                     <div class="range-min">  
                         <span class="empty"><i class="fas fa-times inside right"></i></span>  
                         <input class ="min" id="user-login-from" type="text" placeholder="Enter user's last login time">
                     </div>
-                    <label for="search" class="range-label" style="width: 240px">Last Login Time</label>
+                    <label for="search" class="range-label" style="width: 200px" align="center">Last Login Time</label>
                     <div class="range-button plus-button"><i class="fa fa-plus-circle"></i></div>
                     <div class="range-button from-to-button"><i class="fa fa-arrow-circle-down"></i></div>
                     <div class="range-max">   
@@ -102,7 +88,7 @@ include_once("index.ctp");
                         <th>Edit_role</th>
                         <th>Number of Followers</th>
                         <th>Reported Times </th>
-                        <th>Account Creation Time</th>
+                        <!-- <th>Account Creation Time</th> -->
                         <th>Last Online Time</th>
                         <th>Status</th>
                         <th>Edit_status</th>
@@ -128,7 +114,7 @@ include_once("index.ctp");
                         </td>
                         <td>456</td>
                         <td>20</td>
-                        <td>12/10/2003</td>
+                        <!-- <td>12/10/2003</td> -->
                         <td></td>
                         <td>Active</td>
                         <td style="padding:0">
@@ -161,7 +147,7 @@ include_once("index.ctp");
                         </td>
                         <td>456</td>
                         <td>20</td>
-                        <td>12/10/2003</td>
+                        <!-- <td>12/10/2003</td> -->
                         <td></td>
                         <td>Active</td>
                         <td style="padding:0">
@@ -194,7 +180,7 @@ include_once("index.ctp");
                         </td>
                         <td>34</td>
                         <td>123</td>
-                        <td>12/10/2023</td>
+                        <!-- <td>12/10/2023</td> -->
                         <td></td>
                         <td>Inactive</td>
                         <td style="padding:0">
