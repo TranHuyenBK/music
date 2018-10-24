@@ -1,9 +1,9 @@
-banner-bottom -->
+
 <br><br>   
 <div class="banner-bottom">
         <div class="col-md-4 agileits_w3layouts_banner_bottom_grid">
             <div class="hovereffect">
-                <img src="<?php echo $this->webroot.'/web/images/11.jpg'; ?>" alt=" " class="img-responsive" />
+                <img src=<?php echo $this->webroot.'img/album/'. $albums['Album']['picture_album']?> alt=" " class="img-responsive" />
                 <div class="overlay">
                     <h3 class="w3_instruments">Music Instruments</h3>
                 </div>
@@ -82,7 +82,7 @@ banner-bottom -->
             <div class="col-md-8 w3_agile_newsletter_right">
                 <form action="#" method="post">
                     <input type="email" name="Email" placeholder="Email..." required="">
-                    <input type="password" name="Email" placeholder="Password..." required="">
+                    <input type="password" name="Pass" placeholder="Password..." required="" style = "height: 46px;">
                     <input type="submit" value="Send">
                 </form>
             </div>

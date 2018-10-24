@@ -79,7 +79,9 @@ class PagesController extends AppController {
 	}
 	public function index(){
 		$this->layout = 'master';
-
+		$this->loadModel('Album');
+		$album = $this->Album->find('all');
+		$this->set('albums', $album);
 	}
 	public function music(){
 		$this->layout = 'master';

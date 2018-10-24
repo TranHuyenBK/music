@@ -91,7 +91,8 @@ jQuery(function ($) {
             loadTrack = function (id) {
                 $('.plSel').removeClass('plSel');
                 $('#plList li:eq(' + id + ')').addClass('plSel');
-                npTitle.text($('.plTitle'));
+                console.log(JSON.parse($('.plTitle')));
+                // npTitle.text($('.plTitle'));
                 index = id;
                 audio.src = '../media/Georgia.mp3';
             },
