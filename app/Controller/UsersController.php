@@ -1,6 +1,9 @@
 <?php  
 class UsersController extends AppController {
 
+	public function login(){
+		
+	}
 	public function index(){
 		$this->layout = 'admin';
 		echo "normal";
@@ -10,4 +13,3 @@ class UsersController extends AppController {
 		echo "admin";
 	}
 }
-?>

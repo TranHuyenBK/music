@@ -1,22 +1,25 @@
 
 <br><br>   
 <div class="banner-bottom">
+    <?php foreach ($albums as $album) {?>
         <div class="col-md-4 agileits_w3layouts_banner_bottom_grid">
             <div class="hovereffect">
-                <img src=<?php echo $this->webroot.'img/album/'. $albums['Album']['picture_album']?> alt=" " class="img-responsive" />
+                <a><img src=<?php echo $this->webroot.'img/album/'. $album['Album']['picture_album'];?> alt=" " class="img-responsive" /><a/>
                 <div class="overlay">
-                    <h3 class="w3_instruments">Music Instruments</h3>
+                    <h3 class="w3_instruments"><?php echo $album['Album']['album_name']; ?></h3>
                 </div>
             </div>
             <div class="agileinfo_banner_bottom_grid">
                 <div class="agileits_banner_bottom_grid1">
                     <h4 class="w3ls_color">Symphony</h4>
                     <h3>Viking Music</h3>
-                    <p>Praesent suscipit nunc vel orci dictum pretium. Donec ullamcorper sagittis turpis.</p>
+                    <p><?php echo substr($album['Album']['decription'], 0, 130) ?><?php echo strlen($album['Album']['decription']) > 130 ? "..." : "" ?></p>
                 </div>
             </div>
         </div>
-        <div class="col-md-4 agileits_w3layouts_banner_bottom_grid">
+
+    <?php } ?>
+        <!-- <div class="col-md-4 agileits_w3layouts_banner_bottom_grid">
             <div class="hovereffect">
                 <img src="<?php echo $this->webroot.'/web/images/11.jpg'; ?>" alt=" " class="img-responsive" />
                 <div class="overlay">
@@ -45,7 +48,7 @@
                     <p>Praesent suscipit nunc vel orci dictum pretium. Donec ullamcorper sagittis turpis.</p>
                 </div>
             </div>
-        </div>
+        </div> -->
         <div class="clearfix"></div>
     </div>
 <!-- //banner-bottom -->
@@ -93,31 +96,16 @@
 <!-- team -->
 <!-- <br> -->
     <div class="team">
+    <?php foreach ($albums as $album) {?>
         <div class="hovereffect1 col-md-4 wthree_latest_albums_grid_left">
             <figure class="effect-julia">
-                <img src="<?php echo $this->webroot.'/web/images/11.jpg'; ?>" alt=" " class="img-responsive" />
+                <img src=<?php echo $this->webroot.'img/album/'. $album['Album']['picture_album'];?> alt=" " class="img-responsive" />
                 <div class="overlay">
-                    <h4>Robert Ali</h4>
+                    <h4><?php echo $album['Album']['album_name']; ?></h4>
                 </div>          
             </figure>
         </div>
-        <div class="hovereffect1 col-md-4 wthree_latest_albums_grid_left">
-            <figure class="effect-julia">
-                <img src="<?php echo $this->webroot.'/web/images/11.jpg'; ?>" alt=" " class="img-responsive" />
-                <div class="overlay">
-                    <h4>Robert Ali</h4>
-                </div>          
-            </figure>
-        </div>
-        <div class="hovereffect1 col-md-4 wthree_latest_albums_grid_left">
-            <figure class="effect-julia">
-                <img src="<?php echo $this->webroot.'/web/images/11.jpg'; ?>" alt=" " class="img-responsive" />
-                <div class="overlay">
-                    <h4>Robert Ali</h4>
-                </div>          
-            </figure>
-        </div>
-       
+    <?php } ?>
         <div class="clearfix"></div>
     </div>
 <!-- //team -->
@@ -125,45 +113,18 @@
     <div class="latest-albums">
         <div class="container">
             <h3 class="agileits_w3layouts_head">Our Latest released <span>albums</span></h3>
-            <div class="wthree_latest_albums_grids">
+             <?php foreach ($videos as $video) {?>  
                 <div class="col-md-4 wthree_latest_albums_grid_left">
                     <figure class="effect-julia">
-                        <img src="<?php echo $this->webroot.'/web/images/11.jpg'; ?>" alt=" " class="img-responsive" />
+                        <img src=<?php echo $this->webroot.'img/video/'. $video['Video']['picture_video'];?> alt=" " class="img-responsive" />
                         <figcaption>
                             <div class="w3l_banner_figure">
-                                <p>Ut ac gravida quam id ornare</p>
-                                <p>Nullam imperd scelerisque ullamcorper</p>
-                                <p>Praesent pellentesque neque feugiat</p>
+                                <p><?php echo $video['Video']['video_name']; ?></p> 
                             </div>
                         </figcaption>           
                     </figure>
                 </div>
-                <div class="col-md-4 wthree_latest_albums_grid_left">
-                    <figure class="effect-julia">
-                        <img src="<?php echo $this->webroot.'/web/images/11.jpg'; ?>" alt=" " class="img-responsive" />
-                        <figcaption>
-                            <div class="w3l_banner_figure">
-                                <p>Ut ac gravida quam id ornare</p>
-                                <p>Nullam imperd scelerisque ullamcorper</p>
-                                <p>Praesent pellentesque neque feugiat</p>
-                            </div>
-                        </figcaption>           
-                    </figure>
-                </div>
-                <div class="col-md-4 wthree_latest_albums_grid_left">
-                    <figure class="effect-julia">
-                        <img src="<?php echo $this->webroot.'/web/images/11.jpg'; ?>" alt=" " class="img-responsive" />
-                        <figcaption>
-                            <div class="w3l_banner_figure">
-                                <p>Ut ac gravida quam id ornare</p>
-                                <p>Nullam imperd scelerisque ullamcorper</p>
-                                <p>Praesent pellentesque neque feugiat</p>
-                            </div>
-                        </figcaption>           
-                    </figure>
-                </div>
-                <div class="clearfix"> </div>
-            </div>
+            <?php } ?>
         </div>
     </div>
 <!-- //latest-albums -->

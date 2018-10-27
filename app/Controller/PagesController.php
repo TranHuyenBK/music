@@ -34,7 +34,7 @@ class PagesController extends AppController {
  *
  * @var array
  */
-	public $uses = array('');
+	public $uses = array('Album');
 	//public $layout = "panel";
 
 /**
@@ -79,35 +79,44 @@ class PagesController extends AppController {
 	}
 	public function index(){
 		$this->layout = 'master';
-		$this->loadModel('Album');
-		$album = $this->Album->find('all');
+		$album = $this->Album->find('all', array(
+	        'limit' => 3,
+	        'order' => 'rand()'
+	    	));
 		$this->set('albums', $album);
-	}
-	public function music(){
-		$this->layout = 'master';
-	}
-	public function video(){
-		$this->layout = 'master';
-		$video = $this->Video->find('all');
-		$this->set('videos', $video);
-	}
-	public function playlist_song(){
-		$this->layout = 'master';
-		$this->loadModel('Song');
-		$tracks = $this->Song->find('all');
-		$this->set('tracks', $tracks);
-	}
 
-	public function playlist_video(){
-		$this->layout = 'master';
 		$this->loadModel('Video');
-		$video = $this->Video->find('all');
+		$video = $this->Video->find('all', array(
+	        'limit' => 3,
+	        'order' => 'rand()'
+	    	));
 		$this->set('videos', $video);
 	}
+	// public function music(){
+	// 	$this->layout = 'master';
+	// }
+	// public function video(){
+	// 	$this->layout = 'master';
+	// 	$video = $this->Video->find('all');
+	// 	$this->set('videos', $video);
+	// }
+	// public function playlist_song(){
+	// 	$this->layout = 'master';
+	// 	$this->loadModel('Song');
+	// 	$tracks = $this->Song->find('all');
+	// 	$this->set('tracks', $tracks);
+	// }
 
-	public function detail_song(){
-		$this->layout = 'master';
-	}
+	// public function playlist_video(){
+	// 	$this->layout = 'master';
+	// 	$this->loadModel('Video');
+	// 	$video = $this->Video->find('all');
+	// 	$this->set('videos', $video);
+	// }
+
+	// public function detail_song(){
+	// 	$this->layout = 'master';
+	// }
 
 	public function detail_video(){
 		$this->layout = 'detail';
