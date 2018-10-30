@@ -24,7 +24,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     
 <body>
 <!-- banner -->
-    <div class="banner">
+    <div class="banner1">
         <div class="container">
             <nav class="navbar navbar-default">
                 <div class="navbar-header navbar-left">

@@ -2,7 +2,7 @@
 <br><br>   
 <div class="banner-bottom">
     <?php foreach ($albums as $album) {?>
-        <div class="col-md-4 agileits_w3layouts_banner_bottom_grid">
+        <div class="col-md-3 agileits_w3layouts_banner_bottom_grid">
             <div class="hovereffect">
                 <a><img src=<?php echo $this->webroot.'img/album/'. $album['Album']['picture_album'];?> alt=" " class="img-responsive" /><a/>
                 <div class="overlay">
@@ -17,38 +17,7 @@
                 </div>
             </div>
         </div>
-
     <?php } ?>
-        <!-- <div class="col-md-4 agileits_w3layouts_banner_bottom_grid">
-            <div class="hovereffect">
-                <img src="<?php echo $this->webroot.'/web/images/11.jpg'; ?>" alt=" " class="img-responsive" />
-                <div class="overlay">
-                    <h3 class="w3_instruments">Music Instruments</h3>
-                </div>
-            </div>
-            <div class="agileinfo_banner_bottom_grid w3l_banner_bottom1">
-                <div class="agileits_banner_bottom_grid1">
-                    <h4 class="w3ls_color1">Symphony</h4>
-                    <h3>Hormonica Music</h3>
-                    <p>Praesent suscipit nunc vel orci dictum pretium. Donec ullamcorper sagittis turpis.</p>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-4 agileits_w3layouts_banner_bottom_grid">
-            <div class="hovereffect">
-                <img src="<?php echo $this->webroot.'/web/images/11.jpg'; ?>" alt=" " class="img-responsive" />
-                <div class="overlay">
-                    <h3 class="w3_instruments">Music Instruments</h3>
-                </div>
-            </div>
-            <div class="agileinfo_banner_bottom_grid w3l_banner_bottom2">
-                <div class="agileits_banner_bottom_grid1">
-                    <h4 class="w3ls_color2">Symphony</h4>
-                    <h3>Trumpet Playing</h3>
-                    <p>Praesent suscipit nunc vel orci dictum pretium. Donec ullamcorper sagittis turpis.</p>
-                </div>
-            </div>
-        </div> -->
         <div class="clearfix"></div>
     </div>
 <!-- //banner-bottom -->
@@ -82,7 +51,7 @@
             <div class="col-md-4 w3_agile_newsletter_left">
                 <p>Subscribe Newsletter</p>
             </div>
-            <div class="col-md-8 w3_agile_newsletter_right">
+            <div class="col-md-8 wthree_latest_albums_grid_left">
                 <form action="#" method="post">
                     <input type="email" name="Email" placeholder="Email..." required="">
                     <input type="password" name="Pass" placeholder="Password..." required="" style = "height: 46px;">
@@ -92,12 +61,11 @@
             <div class="clearfix"> </div>
         </div>
     </div>
+    
 <!-- //newsletter -->
-<!-- team -->
-<!-- <br> -->
     <div class="team">
     <?php foreach ($albums as $album) {?>
-        <div class="hovereffect1 col-md-4 wthree_latest_albums_grid_left">
+        <div class="hovereffect1 col-md-2 wthree_latest_albums_grid_right">
             <figure class="effect-julia">
                 <img src=<?php echo $this->webroot.'img/album/'. $album['Album']['picture_album'];?> alt=" " class="img-responsive" />
                 <div class="overlay">

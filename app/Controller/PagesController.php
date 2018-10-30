@@ -80,14 +80,14 @@ class PagesController extends AppController {
 	public function index(){
 		$this->layout = 'master';
 		$album = $this->Album->find('all', array(
-	        'limit' => 3,
+	        'limit' => 5,
 	        'order' => 'rand()'
 	    	));
 		$this->set('albums', $album);
 
 		$this->loadModel('Video');
 		$video = $this->Video->find('all', array(
-	        'limit' => 3,
+	        'limit' => 4,
 	        'order' => 'rand()'
 	    	));
 		$this->set('videos', $video);
